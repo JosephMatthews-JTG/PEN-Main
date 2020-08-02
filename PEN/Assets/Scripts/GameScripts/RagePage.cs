@@ -49,10 +49,10 @@ public class RagePage : MonoBehaviour
         CurrentUp = 1;
         RDoubleCostText.text = "Cost: " + Methods.NotationMethod(game.data.RDoubleCost, y: "F0") + " RAGE";
 
-        !game.data.ACDownUnlocked ? ACDownText.text = "Cost: 15 RAGE" : ACDownText.text = "UNLOCKED!";
-        !game.data.RGFormulaUnlocked ? RGFormulaText.text = "Cost: 100 RAGE" : RGFormulaText.text = "UNLOCKED!";
-        !game.data.SUResetUnlocked ? SUResetText.text = "Cost: 5e6 RAGE" : SUResetText.text = "UNLOCKED!";
-        !game.data.RACChangeUnlocked ? RACChangeText.text = "Cost: 1e15 RAGE" : RACChangeText.text = "UNLOCKED!";
+        !ACDownUnlocked ? ACDownText.text = "Cost: 15 RAGE" : ACDownText.text = "UNLOCKED!";
+        !RGFormulaUnlocked ? RGFormulaText.text = "Cost: 100 RAGE" : RGFormulaText.text = "UNLOCKED!";
+        !SUResetUnlocked ? SUResetText.text = "Cost: 5e6 RAGE" : SUResetText.text = "UNLOCKED!";
+        !RACChangeUnlocked ? RACChangeText.text = "Cost: 1e15 RAGE" : RACChangeText.text = "UNLOCKED!";
     }
 
     void Update()
