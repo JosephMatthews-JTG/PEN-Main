@@ -50,9 +50,9 @@ public class RagePage : MonoBehaviour
         RDoubleCostText.text = "Cost: " + Methods.NotationMethod(game.data.RDoubleCost, y: "F0") + " RAGE";
 
         !game.data.ACDownUnlocked ? ACDownText.text = "Cost: 15 RAGE" : ACDownText.text = "UNLOCKED!";
-        !game.data.RGFormulaUnlocked ? RGFormulaText.text = "Cost: 15 RAGE" : RGFormulaText.text = "UNLOCKED!";
-        !game.data.SUResetUnlocked ? SUResetText.text = "Cost: 15 RAGE" : SUResetText.text = "UNLOCKED!";
-        !game.data.RACChangeUnlocked ? RACChangeText.text = "Cost: 15 RAGE" : RACChangeText.text = "UNLOCKED!";
+        !game.data.RGFormulaUnlocked ? RGFormulaText.text = "Cost: 100 RAGE" : RGFormulaText.text = "UNLOCKED!";
+        !game.data.SUResetUnlocked ? SUResetText.text = "Cost: 5e6 RAGE" : SUResetText.text = "UNLOCKED!";
+        !game.data.RACChangeUnlocked ? RACChangeText.text = "Cost: 1e15 RAGE" : RACChangeText.text = "UNLOCKED!";
     }
 
     void Update()
@@ -78,12 +78,12 @@ public class RagePage : MonoBehaviour
         game.data.ClassIncrease = 100;
         game.data.FLCost = 1e6;
         game.data.FLIncrease = 210000;
-        ups.StudCostText.text = "Cost: " + Methods.NotationMethod(game.data.StudCost, y: "F0") + " Annoyance";
-        ups.StudIncreaseText.text = "Gain: " + Methods.NotationMethod(game.data.StudIncrease, y: "F2") + " CPS";
-        ups.ClassCostText.text = "Cost: " + Methods.NotationMethod(game.data.ClassCost, y: "F0") + " Annoyance";
-        ups.ClassIncreaseText.text = "Gain: " + Methods.NotationMethod(game.data.ClassIncrease, y: "F2") + " CPS";
-        ups.FLCostText.text = "Cost: " + Methods.NotationMethod(game.data.FLCost, y: "F0") + " Annoyance";
-        ups.FLIncreaseText.text = "Gain: " + Methods.NotationMethod(game.data.FLIncrease, y: "F2") + " CPS";
+        ups.StudCostText.text = $"Cost: {Methods.NotationMethod(game.data.StudCost, y: F0)} Annoyance";
+        ups.StudIncreaseText.text = $"Gain: {Methods.NotationMethod(game.data.StudIncrease, y: F2)} CPS";
+        ups.ClassCostText.text = $"Cost: {Methods.NotationMethod(game.data.ClassCost, y: F0)} Annoyance";
+        ups.ClassIncreaseText.text = $"Gain: {Methods.NotationMethod(game.data.ClassIncrease, y: F2)} CPS";
+        ups.FLCostText.text = $"Cost: {Methods.NotationMethod(game.data.FLCost, y: F0)} Annoyance";
+        ups.FLIncreaseText.text = $"Gain: {Methods.NotationMethod(game.data.FLIncrease, y: F2)} CPS";
         //Final Tier
         game.data.BTCost = 1e15;
         game.data.BTIncrease = 3e14;
