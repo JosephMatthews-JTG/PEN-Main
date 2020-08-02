@@ -31,12 +31,9 @@ public class PenPage : MonoBehaviour
             ach.UnlockAchievement("A1");
         }
 
-        if (!game.data.UpgradesPageUnlocked)
+        if (!game.data.UpgradesPageUnlocked && game.data.Annoyance >= 20)
         {
-            if (game.data.Annoyance >= 20)
-            {
-                game.UnlockUPs.SetActive(true);
-            }
+            game.UnlockUPs.SetActive(true);
         }
     }
 
