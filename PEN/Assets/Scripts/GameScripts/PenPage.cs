@@ -26,12 +26,12 @@ public class PenPage : MonoBehaviour
         game.data.Annoyance += 1;
         game.data.TotalAnnoyance += 1;
 
-        if (game.data.UnoUnlocked == false)
+        if (!game.data.UnoUnlocked)
         {
             ach.UnlockAchievement("A1");
         }
 
-        if (game.data.UpgradesPageUnlocked == false)
+        if (!game.data.UpgradesPageUnlocked)
         {
             if (game.data.Annoyance >= 20)
             {
