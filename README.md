@@ -15,4 +15,4 @@
 ## Complicated math
 | Used for  |                  Math                   |
 | :-------: | :-------------------------------------: |
-| Rage gain | $390 \times \sqrt{annoyance \div 1e30}$ |
+| Rage gain | $$390 \times \sqrt{annoyance \div 1e30}$$ |
